@@ -2,6 +2,7 @@ import React from 'react';
 import {z,ZodType} from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import YtForm from './components/YtForm'
 
 import './App.css'
 
@@ -39,7 +40,7 @@ console.log(data);
 
   return (
     <>
-<div className='app'>
+{/* <div className='app'>
   <form className='form' onSubmit={handleSubmit(submitData)}>
     <label >First name:</label>
     <input type="text"{...register("firstName")} />
@@ -54,9 +55,7 @@ console.log(data);
     <input type="email" {...register("email")} />
     {errors.email && <span>{errors.email.message}</span>}
 
-{/* 
-    <label >Phone number:</label>
-    <input type="number" {...register("")} /> */}
+
 
     <label >Age:</label>
     <input type="number" {...register("age", {valueAsNumber:true})} />
@@ -76,7 +75,8 @@ console.log(data);
     <input type="submit" value="submit" />
   </form>
 
-</div>
+</div> */}
+<YtForm/>
     </>
   )
 }
