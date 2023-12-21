@@ -1,12 +1,10 @@
-// Sample Smart Contract 1
-contract SampleContract1 {
-    string public message;
+// SPDX-License-Identifier: MIT
+pragma solidity  0.8.23;
 
-    constructor(string memory initialMessage) {
-        message = initialMessage;
-    }
+contract Day1{
+    string public outstring = "helloworld";
 
-    function setMessage(string memory newMessage) public {
-        message = newMessage;
+    function update(string memory stringupadte) public {
+        outstring = stringupadte;
     }
 }
